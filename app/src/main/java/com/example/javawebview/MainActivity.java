@@ -18,4 +18,14 @@ public class MainActivity extends AppCompatActivity {
         webView.setWebViewClient(new WebViewClient());
         webView.loadUrl("https://www.google.com");
     }
+
+    @Override
+    public void onBackPressed() {
+        if(webView.canGoBack()) {
+            webView.goBack();
+        }
+        else {
+            super.onBackPressed();
+        }
+    }
 }
