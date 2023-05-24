@@ -17,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
 
         webView = (WebView) findViewById(R.id.webview);
         webView.setWebViewClient(new WebViewClient());
-        webView.loadUrl("https://www.google.com");
+        webView.loadUrl("https://BuzzTracker.me");
 
         WebSettings webSettings = webView.getSettings();
         webSettings.setJavaScriptEnabled(true);
